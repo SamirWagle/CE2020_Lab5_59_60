@@ -1,8 +1,9 @@
 #include "sort.h"
 #include <iostream>
+#include<vector>
 using namespace std;
 
-void InsertionSort(int* arr,int size){
+void InsertionSort(vector <int> arr,int size){
     for(int i=0;i<size-1;i++){
         int flag = 0;
         for(int j=0;j<=i;j++){
@@ -15,7 +16,12 @@ void InsertionSort(int* arr,int size){
                 arr[j]=arr[j]^arr[i+1];
             }
         }
+
     }
+    cout<<"\nInsertion Sort"<<endl;
+    for(int i=0;i<size;i++){
+    cout<<arr[i]<<", ";
+}
     return;
 };
 
