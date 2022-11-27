@@ -27,7 +27,7 @@ void InsertionSort(vector <int> arr,int size){
     return;
 };
 
-/*void Quicksort(vector<int>arr,int size,int left,int right){
+void Quicksort(vector<int>arr,int size,int left,int right){
     int i=left;
     int j=right;
     int pivot=arr[(left+right)/2];
@@ -53,6 +53,9 @@ void InsertionSort(vector <int> arr,int size){
         Quicksort(arr,size,i,right);
     }
 
+    cout<<"\nMerge Sort"<<endl;
+    for(int i=0;i<size;i++){
+    cout<<arr[i]<<", ";
+}
     return;
 };
-*/
