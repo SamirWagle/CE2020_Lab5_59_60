@@ -27,7 +27,7 @@ void InsertionSort(vector <int> arr,int size){
     return;
 };
 
-void Quicksort(vector<int>arr,int size,int left,int right){
+/*void Quicksort(vector<int>arr,int size,int left,int right){
     int i=left;
     int j=right;
     int pivot=arr[(left+right)/2];
@@ -55,3 +55,4 @@ void Quicksort(vector<int>arr,int size,int left,int right){
 
     return;
 };
+*/

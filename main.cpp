@@ -23,7 +23,7 @@ for(int i=0;i<n;i++){
     cout<<array.at(i)<<", ";
 }
 
-Quicksort(array,n,0,n-1);
+InsertionSort(array,n);
 cout<<"Quick Sort"<<endl;
 for(int i=0;i<n;i++){
     cout<<array.at(i)<<", ";
