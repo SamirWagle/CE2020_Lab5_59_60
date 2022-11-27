@@ -23,8 +23,11 @@ for(int i=0;i<n;i++){
     cout<<array.at(i)<<", ";
 }
 
-
-InsertionSort(array,n);
+Quicksort(array,n,0,n-1);
+cout<<"Quick Sort"<<endl;
+for(int i=0;i<n;i++){
+    cout<<array.at(i)<<", ";
+}
 
 
 }

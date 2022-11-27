@@ -3,6 +3,8 @@
 #include<vector>
 using namespace std;
 
+
+
 void InsertionSort(vector <int> arr,int size){
     for(int i=0;i<size-1;i++){
         int flag = 0;
@@ -25,6 +27,31 @@ void InsertionSort(vector <int> arr,int size){
     return;
 };
 
-void Quicksort(int* arr,int size){
+void Quicksort(vector<int>arr,int size,int left,int right){
+    int i=left;
+    int j=right;
+    int pivot=arr[(left+right)/2];
+    while(i<=j){
+        while(arr[i]<pivot){
+            i++;
+        }
+        while(arr[j]>pivot){
+            j--;
+        }
+        if(i<=j){
+            arr[i]=arr[i]^arr[j];
+            arr[j]=arr[i]^arr[j];
+            arr[i]=arr[i]^arr[j];
+            i++;
+            j--;
+        }
+    }
+    if(left<j){
+        Quicksort(arr,size,left,j);
+    }
+    if(i<right){
+        Quicksort(arr,size,i,right);
+    }
 
+    return;
 };
