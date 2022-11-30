@@ -53,7 +53,7 @@ void Quicksort(vector<int>arr,int size,int left,int right){
         Quicksort(arr,size,i,right);
     }
 
-    cout<<"\nMerge Sort"<<endl;
+    cout<<"\n Sort"<<endl;
     for(int i=0;i<size;i++){
     cout<<arr[i]<<", ";
 }
